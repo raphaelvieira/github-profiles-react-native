@@ -1,6 +1,7 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 import Main from './pages/Main';
 import User from './pages/User';
+import Repository from './pages/Repository';
 
 // createBottomTabNavigator
 // createSwitchNavigator
@@ -9,7 +10,7 @@ import User from './pages/User';
 
 const Routes = createAppContainer(
   createStackNavigator(
-    { Main, User },
+    { Main, User, Repository },
     {
       headerLayoutPreset: 'center',
       headerBackTitleVisible: false,

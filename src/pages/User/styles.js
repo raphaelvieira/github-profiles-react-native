@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -47,6 +48,7 @@ export const Starred = styled.View`
   margin-bottom: 20px;
   flex-direction: row;
   align-items: center;
+  opacity: ${props => (props.loading ? 0.7 : 1)};
 `;
 export const OwnerAvatar = styled.Image`
   height: 42px;
@@ -69,4 +71,14 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const DetailButton = styled(RectButton)`
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  background: #7159c1;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding: 0 12px;
 `;
